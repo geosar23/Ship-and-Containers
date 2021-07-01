@@ -17,7 +17,7 @@ public class Ship {
 	{
 		if(containers.size()<capacity) {
 			containers.add(aContainer);
-			System.out.println("New Container has been loaded");
+			System.out.println("New Container has been loaded on "+name );
 		}else
 			System.out.println("No Capacity , cant load the Conctainer");
 	}
@@ -36,6 +36,16 @@ public class Ship {
 		System.out.println("Total cost of shipment: "+name+" is :"+sum);
 		return sum;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+	
+	
 	
 
 }
